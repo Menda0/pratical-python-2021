@@ -110,3 +110,100 @@ print("tup1[1] =", tup1[1])
 
 tup2 = "marco",
 print("type(tup2) =", type(tup2))
+
+# Dict key -> value
+dict1 = {"name":"Marco", "age": 31}
+
+print("dict1[name] =", dict1["name"])
+print("dict1[age] =", dict1["age"])
+print("type(dict1) =", type(dict1))
+print("type(dict1[age]) =", type(dict1["age"]))
+
+dict1["name"] = "Henrique"
+
+print("dict1 =", dict1)
+
+del dict1["age"]
+
+print("dict1 =", dict1)
+
+dict1 = {
+    "name": "Marco",
+    "age": 31,
+    "gender": "male"
+}
+
+values = list(dict1.values())
+print("values =",values)
+print("type(values) =", type(values))
+
+keys = list(dict1.keys())
+print("keys =", keys)
+
+dict1 = {
+    "name": "Pratical Python",
+    "formandos":[
+        "Marco",
+        "Manuel",
+        "Luis",
+        "Sandra"
+    ]
+}
+
+print("type(dict1) =", type(dict1))
+print("type(dict1[formandos]) =", type(dict1["formandos"]))
+
+formandos1 = dict1["formandos"]
+print("formandos1[0] =", formandos1[0])
+
+print("dict1[formandos][0] =", dict1["formandos"][0])
+
+# Pedro, Manuel, Luis, Sandra
+formandos1[0] = "Pedro"
+
+print("formandos1 =", formandos1)
+print("dict1[formandos] =", dict1["formandos"])
+
+list1 = [
+    {
+        "name":"Marco",
+        "age": 31
+    },
+    {
+        "name": "Pedro",
+        "age": 15
+    },
+    {
+        "name": "Filomena",
+        "age": 25
+    }
+]
+
+print("list1[2][age] =",list1[2]["age"])
+
+filomena = list1[2]
+print("filomena[name] =", filomena["name"])
+
+filomena["age"] = 26
+
+print("filomena =", filomena)
+print("list1 =", list1)
+
+list_of_list = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12]
+]
+
+# Get value 7
+print("list_of_list =", list_of_list[1][2])
+
+dict1 = {
+    "name":"Marco",
+    "details":{
+        "address": "Avenida Sao Francisco Xavier",
+        "number": 5
+    }
+}
+
+print("dict1[details][number] =",dict1["details"]["number"])
