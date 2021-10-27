@@ -13,3 +13,56 @@
     6. Print on the screen 3 equal animals
        (Example: 3 Eagles, 3 Bears, 3 Foxes)
 '''
+
+# Diogo
+salmon = {
+    "name":"Salmon",
+    "color":"salmon",
+    "sound":"gurrp"
+}
+
+eagle = {
+    "name":"eagle",
+    "color":"brown",
+    "sound":"pii"
+}
+
+bear = {
+    "name":"bear",
+    "color":"brown",
+    "sound":"uaaah"
+}
+
+fox = {
+    "name":"fox",
+    "color":"orange",
+    "sound":"lol"
+}
+
+whale = {
+    "name":"Whale",
+    "color":"Blue",
+    "sound":"mmmmmmmm"
+}
+
+tiger ={
+    "name":"Tiger",
+    "color":"Orange",
+    "sound":"sneaky"
+}
+
+
+mammals = [tiger,bear,whale,fox]
+bird = [eagle]
+fish = [salmon]
+
+#animals=[salmon,eagle,bear,fox,whale,tiger]
+animals=mammals+bird+fish
+print("Animals: ", animals)
+
+
+bears=[bear]*3
+print(bears)
+
+list_bear=[bear,bear,bear]
+print(list_bear)

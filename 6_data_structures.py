@@ -8,6 +8,7 @@ number4 = 40
 list1 = [number1, number2, number3, number4]
 
 print("list1 =", list1)
+# Type list
 print("type(list1) =", type(list1))
 
 print("list1[0] =", list1[0])
@@ -17,15 +18,18 @@ print("list1[2] =", list1[2])
 # print("list1[4] =", list1[4])
 print("type(list1[0]) =", type(list1[0]))
 
+# List of strings
 list2 = ["marco", "luis", "jose", "rui"]
 
 print("type(list2)", type(list2))
 print("type(list[2])", type(list2[2]))
 
+# List with multiple types
 list3 = ["marco", 31, 1.74]
 print("type(list3[0])", type(list3[0]))
 print("type(list3[1])", type(list3[1]))
 
+# Change list values
 list3[0] = "francisco"
 print("list3[0]", list3[0])
 print("list3 =", list3)
@@ -36,6 +40,7 @@ print("list3 =", list3)
 list1 = [1,2,3,4,5,6,7]
 list2 = [8,9,10,11]
 
+# Concact list
 list3 = list1 + list2
 print("list3 =", list3)
 
@@ -47,27 +52,33 @@ print("list4 =", list4)
 
 list1 = ["marco"]
 
+# Explode list
 list2 = list1 * 3
 print("list3 =", list2)
 
 list1 = [1,2,3,4,5,6,7,8]
 
+# Check if element is inside list
 is_6_in_list = 6 in list1
 print("is_6_in_list =", is_6_in_list)
 
 is_12_in_list = 12 in list1
 print("is_12_in_list =", is_12_in_list)
 
+# Add element to the end of the list
 list1.append(12)
 print("list1 =", list1)
 
+# Add element to an index of the list
 list1.insert(2, 10)
 print("list1 =", list1)
 # 1, 2, 10, 3, 4, 5, 6, 7, 8, 12
 
+# Remove last element of the list
 list1.pop()
 print("list1 =", list1)
 
+# Remove element at position of the list
 list1.remove(10)
 print("list1 =", list1)
 # 1,2,3,4,5,6,7,8
@@ -77,9 +88,11 @@ list2.remove(2)
 
 print("list2 =", list2)
 
+# Reverse a list
 list1.reverse()
 print("list1 =", list1)
 
+# Get sublist of a list
 list2 = list1[0:3]
 print("list2 =", list2)
 
@@ -94,11 +107,13 @@ print("list4 =",list4)
 list5 = list1[:2] + list1[3:]
 print("list5 = ", list5)
 
+# Get size of the list
 size = len(list1)
 print("size list1 =", size)
 
 print("list1[-2] =",list1[-2])
 
+# Create a tuple
 tup1 = ("marco", "sandra", "francisco")
 print("tup1 =", tup1)
 print("type(tup1) =", type(tup1))
@@ -111,6 +126,7 @@ print("tup1[1] =", tup1[1])
 tup2 = "marco",
 print("type(tup2) =", type(tup2))
 
+# Create a dict
 # Dict key -> value
 dict1 = {"name":"Marco", "age": 31}
 
@@ -119,10 +135,12 @@ print("dict1[age] =", dict1["age"])
 print("type(dict1) =", type(dict1))
 print("type(dict1[age]) =", type(dict1["age"]))
 
+# Change dict value
 dict1["name"] = "Henrique"
 
 print("dict1 =", dict1)
 
+# Delete key
 del dict1["age"]
 
 print("dict1 =", dict1)
@@ -133,13 +151,16 @@ dict1 = {
     "gender": "male"
 }
 
+# Get dict values
 values = list(dict1.values())
 print("values =",values)
 print("type(values) =", type(values))
 
+# Get dict keys
 keys = list(dict1.keys())
 print("keys =", keys)
 
+# dict with list
 dict1 = {
     "name": "Pratical Python",
     "formandos":[
@@ -164,6 +185,7 @@ formandos1[0] = "Pedro"
 print("formandos1 =", formandos1)
 print("dict1[formandos] =", dict1["formandos"])
 
+# List with dicts
 list1 = [
     {
         "name":"Marco",
@@ -189,6 +211,7 @@ filomena["age"] = 26
 print("filomena =", filomena)
 print("list1 =", list1)
 
+# List of lists
 list_of_list = [
     [1,2,3,4],
     [5,6,7,8],
@@ -198,6 +221,7 @@ list_of_list = [
 # Get value 7
 print("list_of_list =", list_of_list[1][2])
 
+# Dict with dict
 dict1 = {
     "name":"Marco",
     "details":{
