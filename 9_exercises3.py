@@ -60,36 +60,55 @@ for person in people:
     else:
         short_people.append(person)
 
-print("###### List of Adults (size > 18) ######")
-#print(adults)
-for adult in adults:
-    print (f"Name: {adult['name']}")
-    print (f"Age: {adult['age']}")
-    print (f"Size: {adult['size']}")
-    print ("")
+def printPeople(people):
+    for person in people:
+        print (f"Name: {person['name']}")
+        print (f"Age: {person['age']}")
+        print (f"Size: {person['size']}")
+        print ("")
 
-print("")
+print("###### List of Adults (age > 18) ######")
+printPeople(adults)
+
 print("###### List of Tall People (size > 2.0) ######")
-#print(tall_people)
-for tall_person in tall_people:
-    print (f"Name: {tall_person['name']}")
-    print (f"Age: {tall_person['age']}")
-    print (f"Size: {tall_person['size']}")
-    print ("")
+printPeople(tall_people)
 
-print("")
 print("###### List of Average People (1.6 <= size < 2.0) ######")
-#print(average_people)
-for average_person in average_people:
-    print (f"Name: {average_person['name']}")
-    print (f"Age: {average_person['age']}")
-    print (f"Size: {average_person['size']}")
-    print ("")
-print("")
+printPeople(average_people)
+
 print("###### List of Short People < 1.6 ######")
-#print(short_people)
-for short_person in short_people:
-    print (f"Name: {short_person['name']}")
-    print (f"Age: {short_person['age']}")
-    print (f"Size: {short_person['size']}")
-    print ("")
+printPeople(short_people)
+
+# print("###### List of Adults (size > 18) ######")
+# #print(adults)
+# for adult in adults:
+#     print (f"Name: {adult['name']}")
+#     print (f"Age: {adult['age']}")
+#     print (f"Size: {adult['size']}")
+#     print ("")
+
+# print("")
+# print("###### List of Tall People (size > 2.0) ######")
+# #print(tall_people)
+# for tall_person in tall_people:
+#     print (f"Name: {tall_person['name']}")
+#     print (f"Age: {tall_person['age']}")
+#     print (f"Size: {tall_person['size']}")
+#     print ("")
+
+# print("")
+# print("###### List of Average People (1.6 <= size < 2.0) ######")
+# #print(average_people)
+# for average_person in average_people:
+#     print (f"Name: {average_person['name']}")
+#     print (f"Age: {average_person['age']}")
+#     print (f"Size: {average_person['size']}")
+#     print ("")
+# print("")
+# print("###### List of Short People < 1.6 ######")
+# #print(short_people)
+# for short_person in short_people:
+#     print (f"Name: {short_person['name']}")
+#     print (f"Age: {short_person['age']}")
+#     print (f"Size: {short_person['size']}")
+#     print ("")
