@@ -51,3 +51,19 @@ count = 1
 while count <= 10:
     print(count)
     count = count + 1
+
+people = [marco, rui]
+
+# print(marco["name"])
+# print(rui["name"])
+
+i = 0
+while i < len(people):
+    person = people[i]
+    print(f"Person is: {person['name']}")
+    i = i + 1
+
+# For statement
+
+for person in people:
+    print(f"Person age is: {person['age']}")
