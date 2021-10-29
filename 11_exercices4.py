@@ -53,3 +53,26 @@ def getMultipleOfTwo(list):
 
 print(getMultipleOfTwo(l))
 print(getMultipleOfTwo(l))
+
+# Prime numbers
+# Number greater than 1
+# And can be divisible by themselves and 1
+# 2, 3, 5, 7, 11, 13, 17, 19.
+# def isPrime(number):
+
+# Get the greatest common devisor between two numbers
+# Min number 48
+# 60 % 48 == 0 && 48 == 0 -> False
+# 60 % 47 == 0 && 47 == 0 -> False
+# 60 % 46 == 0 && 46 == 0 -> False
+# 60 % 45 == 0 && 45 == 0 -> False
+# 60 % 44 == 0 && 44 == 0 -> False
+#...
+# 60 % 12 == 0 && 12 == 0 -> True
+# def getGCD(number1, number2):
+
+# Fibonnaci
+# fib(0) = 0
+# fib(1) = 1
+# fib(2) = fib(2-1)+fib(2-2) = fib(1)+fib(0) = 1
+# fib(x) = fib(x-1)+fib(x-2)

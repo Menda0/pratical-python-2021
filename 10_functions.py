@@ -85,4 +85,43 @@ def averageAge(listOfPersons):
     return average
 
 print("averageAge(people) =",averageAge(people))
-    
+
+# Recursive functions
+
+# 1! = 1
+# 0! = 1
+# 2! = 2*1 = 2
+# 3! = 3*2*1 = 6
+# 4! = 4*3*2*1 = 24
+
+# 1! = 1
+# 0! = 1
+# 2! = 2 * 1!
+# 3! = 3 * 2!
+# 4! = 4 * 3!
+# n! = n * (n-1)!
+
+# Iterative function
+def fact(number):
+    if number == 0 or number == 1:
+        return 1
+    else:
+        count = number
+        result = 1
+        while count > 1:
+            result = count * result
+            count = count - 1
+        return result
+
+# n! = n * (n-1)!
+# Recursive function
+def fact(number):
+    if number == 0 or number == 1:
+        return 1
+    else:
+        return number * fact(number-1)
+
+print("fact(1) =", fact(1))
+print("fact(2) =", fact(2))
+print("fact(3) =", fact(3))
+print("fact(4) =", fact(4))
