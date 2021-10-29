@@ -16,7 +16,7 @@ def areaPerimetroQuadrado(lado):
 
 def areaPerimetroTrianguloEquilatero(lado):
     perimetro = lado*3
-    area = (3 ** 0.5) * lado / 4
+    area = (3 ** 0.5) * (lado ** 2) / 4
     return (area, perimetro)
 
 
