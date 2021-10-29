@@ -6,6 +6,7 @@
 ## 3.1 Run() -> When athelete run there must be a decrease of one point of energy
 ## 3.2 Eat() -> when athelete eats there must be an increse of one point of energy
 
+# Francisco Example
 class Athlete:
 
     # attributes
@@ -60,3 +61,17 @@ sandra = Athlete(20, "Sandra")
 sandra.run()
 sandra.eat()
 '''
+
+# 1. Create a class animal
+# 2. Animal should have and attribute type that contains the type of animal
+#    (Example: bird, mamal, reptile, etc)
+# 3. Animal should have the attribute name
+#    (Example: "Bear", "Dog", "Cobra", "Fox", "Cat")
+# 4. Animal should have a method called noise. 
+#    When invoked it must print on the terminal the sound of the animal.
+#    (Example: Dog barks, Car Miau)
+# 5. Create 3 classes for 3 types of animal
+# 6. Types of animals should be a subclass of animal
+# 7. Create 6 animal objects of multiple animal types
+#    (Example: "Mamal Dog", "Repile Cobra", "Bird Eagle", etc)
+# 8. Make every animal speak
