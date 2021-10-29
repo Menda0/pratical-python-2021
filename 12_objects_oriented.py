@@ -1,5 +1,4 @@
 
-# Francisco Example
 class Car:
 
     # attributes
@@ -51,3 +50,4 @@ print("filomena_car =", filomena_car)
 
 henrique_car.honk()
 filomena_car.honk()
+
