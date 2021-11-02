@@ -60,6 +60,18 @@ print(getMultipleOfTwo(l))
 # 2, 3, 5, 7, 11, 13, 17, 19.
 # def isPrime(number):
 
+def isPrime(number):
+    if number <= 1:
+        return False
+    
+    count = 2
+    while count < number:
+        if number % count == 0:
+            return False    
+        count = count + 1
+
+    return True
+
 # Get the greatest common devisor between two numbers
 # Min number 48
 # 60 % 48 == 0 && 48 == 0 -> False
@@ -70,9 +82,33 @@ print(getMultipleOfTwo(l))
 #...
 # 60 % 12 == 0 && 12 == 0 -> True
 # def getGCD(number1, number2):
+def getGCD(number1, number2):
+    if number1 > number2:
+        small = number2
+    else:
+        small = number1
+
+    count = small
+    while count >= 1:
+        if((number1 % count == 0) and (number2 % count == 0)):
+            return count
+        count = count - 1
 
 # Fibonnaci
 # fib(0) = 0
 # fib(1) = 1
 # fib(2) = fib(2-1)+fib(2-2) = fib(1)+fib(0) = 1
 # fib(x) = fib(x-1)+fib(x-2)
+def fib(num):
+    if num == 0:
+        return 0
+    elif num == 1:
+        return 1
+    else:
+        return fib(num-1)+fib(num-2)
+
+def fibonacci(n):
+    f = [0, 1]
+    while n >= len(f):
+        f.append(f[-1] + f[-2])
+    return f[n]

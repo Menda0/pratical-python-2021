@@ -25,6 +25,28 @@ class Car:
     def __repr__(self):
         return f"Car with fuel:{self.fuel} and brand:{self.brand} and model:{self.model} "
 
+class EletricCar(Car):
+
+    FUEL = "eletric"
+    
+    def __init__(self, brand, model):
+        super().__init__(brand, model, EletricCar.FUEL)
+
+    def charge(self):
+        print(f"The car with model:{self.model} and brand:{self.brand} is charging")
+
+    def start(self):
+        super().start()
+        print("The batery is decreasing")
+
+class NissanEletric(EletricCar):
+    pass
+
+class TeslaEletric(EletricCar):
+    
+    def connect_to_phone(self):
+        print("Tesla is connected to phone")
+
 # henrique_car = {
 #     "brand": "Tesla",
 #     "model": "X",
@@ -50,4 +72,13 @@ print("filomena_car =", filomena_car)
 
 henrique_car.honk()
 filomena_car.honk()
+
+rui_car = EletricCar("Nissan", "Leaf")
+
+print("rui_car", rui_car)
+print("type(rui_car) =",type(rui_car))
+
+rui_car.charge()
+rui_car.honk()
+rui_car.start()
 
