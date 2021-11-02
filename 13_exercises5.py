@@ -75,3 +75,12 @@ sandra.eat()
 # 7. Create 6 animal objects of multiple animal types
 #    (Example: "Mamal Dog", "Repile Cobra", "Bird Eagle", etc)
 # 8. Make every animal speak
+
+class Animal:
+
+    name = None
+    type = None
+    sound = None
+
+    def noise(self):
+        pass
