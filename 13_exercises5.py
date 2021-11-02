@@ -76,11 +76,52 @@ sandra.eat()
 #    (Example: "Mamal Dog", "Repile Cobra", "Bird Eagle", etc)
 # 8. Make every animal speak
 
+# By Daniel Duro
 class Animal:
 
-    name = None
     type = None
+    name = None
     sound = None
 
-    def noise(self):
-        pass
+    def __init__(self,type,name,sound):
+        self.type = type
+        self.name = name
+        self.sound = sound
+
+    def noise (self):
+        print(f"The animal with name {self.name} and type {self.type} make the noise {self.sound}")
+        
+
+    def __repr__(self):
+        return f"Animal with Type:{self.type} and Name:{self.name} and sound:{self.sound}"
+
+    
+class Mamal(Animal):
+    TYPE ="Mamal"
+
+    def __init__(self,name,sound):
+        super().__init__(Mamal.TYPE,name,sound)
+
+class Bird(Animal):
+    TYPE ="Bird"
+    def __init__(self,name,sound):
+        super().__init__(Bird.TYPE,name,sound)
+
+class Reptile(Animal):
+    TYPE='Reptile'
+    def __init__(self,name,sound):
+        super().__init__(Reptile.TYPE,name,sound)
+
+dog=Mamal("Dog","Auau")
+cat=Mamal("Cat","Miau")
+eagle=Bird("Eagle","Piu")
+cobra=Reptile("Cobra","Qql_Coisa")
+bear=Mamal("Bear","Qql_coisa")
+fox=Mamal("Fox","Qql_coisa")
+
+dog.noise()
+cat.noise()
+eagle.noise()
+cobra.noise()
+bear.noise()
+fox.noise()
