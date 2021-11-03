@@ -6,10 +6,26 @@
 '''
     Example:
 
-    0, 0
-    1, 1
-    2, 1
-    3, 5
+    fib(0) =, 0
+    fib(1) =, 1
+    fib(2) =, 1
+    fib(3) =, 5
     ...
 
 '''
+
+import csv
+from module_example import fib
+
+with open('fib.csv', 'w', newline='') as csvfile:
+
+    writer = csv.writer(csvfile, delimiter=',')
+
+    for i in range(20):       
+
+        #fib_col1="fib("+ str(i) +")"
+        fib_col1=f"fib({i})"
+        fib_col2=fib(i)
+        fib_line=[fib_col1,fib_col2]
+       
+        writer.writerow(fib_line)
